@@ -12,7 +12,6 @@
     <title>Create Employee</title>
 </head>
 <body>
-<form action="<%=request.getContextPath()%>" method="post">
   <label for="empId">Employee Id</label>
   <input type="text" id="empId" name="empId"/><br>
   <label for="empName">Employee Name</label>
@@ -26,7 +25,6 @@
   <input type="text" id="empEmail" name="empEmail"/><br>
   <label for="empPhone">Employee Phone</label>
   <input type="text" id="empPhone" name="empPhone"/><br>
-  <label for="empAddress">Employee Phone</label>
   <input type="text" id="empAddress" name="empAddress"/><br>
   <label for="deptId">Dept Id</label>
   <select id="deptId" name="department.deptId">

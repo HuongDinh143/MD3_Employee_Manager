@@ -10,4 +10,6 @@ public interface EmployeeService {
     boolean create(Employee employee);
     boolean update(Employee employee);
     boolean delete(String empId);
+    List<Employee> findByDeptId(int deptId);
+    List<Employee> searchEmployee(String keyword);
 }

@@ -2,6 +2,7 @@ package ra.revise.repository.imp;
 
 import org.springframework.stereotype.Repository;
 import ra.revise.model.Department;
+import ra.revise.model.Employee;
 import ra.revise.repository.DepartmentRepository;
 
 import javax.persistence.EntityManager;

@@ -12,6 +12,7 @@
     <title>List Employee</title>
 </head>
 <body>
+
 <table>
   <thead>
   <tr>
@@ -27,6 +28,7 @@
     <th>Employee Status</th>
     <th>Action</th>
   </tr>
+
   </thead>
   <tbody>
   <c:forEach items="${listEmployees}" var="emp" varStatus="loop">
@@ -40,7 +42,7 @@
       <td>${emp.empPhone}</td>
       <td>${emp.empAddress}</td>
       <td>${emp.department.deptName}</td>
-      <td>${emp.empStatus=0?"Đang làm việc":(emp.empStatus=1?"Nghỉ việc":"Nghỉ chế độ")}</td>
+      <td>${emp.empStatus==0?"Đang làm việc":(emp.empStatus==1?"Nghỉ việc":"Nghỉ chế độ")}</td>
       <td>
         <a href="<%=request.getContextPath()%>/employeeController/initUpdate?empId=${emp.empId}">Update</a>|
         <a href="<%=request.getContextPath()%>/employeeController/delete?empId=${emp.empId}">Delete</a>
@@ -50,6 +52,7 @@
   </tbody>
 </table>
 <a href="<%=request.getContextPath()%>/employeeController/initCreate">Create Employee</a>
+<a href="<%=request.getContextPath()%>/employeeController/initSearch">Search</a>
 
 </body>
 </html>

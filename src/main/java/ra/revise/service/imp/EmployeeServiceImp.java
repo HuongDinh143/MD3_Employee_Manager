@@ -36,4 +36,14 @@ public class EmployeeServiceImp implements EmployeeService {
     public boolean delete(String empId) {
         return employeeRepository.delete(empId);
     }
+
+    @Override
+    public List<Employee> findByDeptId(int deptId) {
+        return employeeRepository.findByDeptId(deptId);
+    }
+
+    @Override
+    public List<Employee> searchEmployee(String keyword) {
+        return employeeRepository.searchEmployee(keyword);
+    }
 }
